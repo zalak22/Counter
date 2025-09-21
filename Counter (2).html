@@ -1,0 +1,42 @@
+<html>
+<head>
+  
+    <link rel="stylesheet" href="counter.css">
+<script>
+
+        let count = 0;
+
+
+    function increment(){
+      let a = document.getElementById("inc")
+
+      a.innerText = count++;
+      
+    }
+
+    function decrement(){
+
+      let b = document.getElementById("inc")
+
+      b.innerText = count--;
+    }
+        
+    </script>
+</head>
+
+<body>
+   <div class="main">
+     <p id="para" > The Counter App</p> 
+
+    <p id="inc" > 0 </p>
+   
+    <div class="btn">
+
+       <button id="btn1" onclick="increment()"> Increment</button>
+    <button id="btn2" onclick="decrement()">  decrement </button>
+
+    </div>
+   </div>
+</body>
+
+</html>
